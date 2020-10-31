@@ -20,6 +20,15 @@ public class homeWorkOne {
         return c;
     }
 
+    // Task 3
+    private static void positiveOrNot(int a) {
+        if(a >= 0) {
+            System.out.println(a + " - positive number.");
+        } else {
+            System.out.println(a + " - negative number.");
+        }
+    }
+
     // Check
     public static void main(String[] args) {
 
@@ -47,6 +56,12 @@ public class homeWorkOne {
         k = 6;
         trueOrFalse = rangeSum(k, m);
         System.out.println("10 <= " + (k + m) + " <= 20 - "+ trueOrFalse);
+
+        String multipleLines3 = System.lineSeparator() + "Task 3";
+        System.out.println(multipleLines3);
+        positiveOrNot(-33);
+        positiveOrNot(32);
+        positiveOrNot(0);
 
     }
 }
