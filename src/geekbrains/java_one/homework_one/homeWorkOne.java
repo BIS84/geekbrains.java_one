@@ -35,6 +35,15 @@ public class homeWorkOne {
         return  hello;
     }
 
+    // Task 5
+    private static void leapYear(int a) {
+        if((a % 4 == 0 && a % 100 != 0) || a % 400 == 0) {
+            System.out.println(a + " - leap year.");
+        } else {
+            System.out.println(a + " - not a leap year.");
+        }
+    }
+
     // Check
     public static void main(String[] args) {
 
@@ -73,6 +82,13 @@ public class homeWorkOne {
         System.out.println(multipleLines4);
         String hello = helloName("Igor");
         System.out.println(hello);
+
+        String multipleLines5 = System.lineSeparator() + "Task 5";
+        System.out.println(multipleLines5);
+        leapYear(2200);
+        leapYear(2000);
+        leapYear(1996);
+        leapYear(1961);
 
     }
 }
