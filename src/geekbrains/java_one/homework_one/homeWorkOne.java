@@ -29,6 +29,12 @@ public class homeWorkOne {
         }
     }
 
+    // Task 4
+    private static String helloName(String name) {
+        String hello = "Hello, " + name + "!";
+        return  hello;
+    }
+
     // Check
     public static void main(String[] args) {
 
@@ -62,6 +68,11 @@ public class homeWorkOne {
         positiveOrNot(-33);
         positiveOrNot(32);
         positiveOrNot(0);
+
+        String multipleLines4 = System.lineSeparator() + "Task 4";
+        System.out.println(multipleLines4);
+        String hello = helloName("Igor");
+        System.out.println(hello);
 
     }
 }
