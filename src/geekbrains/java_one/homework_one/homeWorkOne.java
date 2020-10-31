@@ -9,6 +9,16 @@ public class homeWorkOne {
         return e;
     }
 
+    // Task 2
+    private static boolean rangeSum(int a, int b) {
+        boolean c;
+        if((a + b) >= 10 && (a + b) <= 20) {
+            c = true;
+        } else {
+            c = false;
+        }
+        return c;
+    }
 
     // Check
     public static void main(String[] args) {
@@ -20,5 +30,23 @@ public class homeWorkOne {
         if (a == 7.6f) {
             System.out.println("Yes!");
         }
+
+        String multipleLines2 = System.lineSeparator() + "Task 2";
+        System.out.println(multipleLines2);
+        int k = 4;
+        int m = 5;
+        int g = 0;
+        boolean trueOrFalse = rangeSum(k, m);
+        System.out.println("10 <= " + (k + m) + " <= 20 - "+ trueOrFalse);
+        k = 5;
+        trueOrFalse = rangeSum(k, m);
+        System.out.println("10 <= " + (k + m) + " <= 20 - "+ trueOrFalse);
+        m = 15;
+        trueOrFalse = rangeSum(k, m);
+        System.out.println("10 <= " + (k + m) + " <= 20 - "+ trueOrFalse);
+        k = 6;
+        trueOrFalse = rangeSum(k, m);
+        System.out.println("10 <= " + (k + m) + " <= 20 - "+ trueOrFalse);
+
     }
 }
